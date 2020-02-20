@@ -94,10 +94,14 @@
   width: 100%;
 }
 /* Tab-2 Content */
+.tab-2-box {
+  padding: 15px 0;
+  margin: 5px 0;
+}
 .tab-2-content-top {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -126,11 +130,12 @@
 .tab-2-content-bottom {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0;
+  padding: 7px 0 8px 0;
 }
 .tab-2-box h3 {
   margin-top: 10px;
