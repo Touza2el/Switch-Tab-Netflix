@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+
+/* ----- Start Tab Section ----- */
+.container {
+  width: 80%;
+  margin: auto;
+}
+.tabs {
+  background-color: #141414;
+  margin-bottom: 30px;
+}
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.tabs .container > div {
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+.tabs .container > div:hover i,
+.tabs .container > div:hover p {
+  color: #e92b57;
+}
+.tabs p {
+  padding-top: 10px;
+  color: gray;
+  text-transform: capitalize;
+  transition: color 0.7s ease;
+}
+.tabs i {
+  color: gray;
+  transition: color 0.7s ease;
+}
+.tab-border-bottom {
+  border-bottom: 4px solid #e92b57;
+}
+
+/* ----- End Tab Section ----- */
+
+/* ----- Start Tabs Content ----- */
+
+/* Hide Tab Content Item Initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+
+/* Tab-1 Content */
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 8px 30px;
+}
+.text-lg h1 {
+  color: #141414;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.text-lg p {
+  padding: 5px 0 30px 0;
+  color: gray;
+}
+.text-lg .btn {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #e92b57;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.7s ease;
+}
+.text-lg .btn:hover {
+  color: #e92b57;
+  background-color: transparent;
+}
+.image-lg img {
+  display: block;
+  width: 100%;
+}
+/* Tab-2 Content */
+.tab-2-content-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px 0;
+  background-color: #141414;
+}
+.tab-2-content-top p {
+  color: #fff;
+  font-size: 18px;
+}
+.tab-2-content-top .btn {
+  margin-right: 40px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #e92b57;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.7s ease;
+}
+.tab-2-content-top .btn:hover {
+  color: #e92b57;
+  background-color: transparent;
+}
+.tab-2-content-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.tab-2-box h3 {
+  margin-top: 10px;
+  color: #e92b57;
+  text-transform: capitalize;
+}
+.tab-2-box p {
+  margin-top: 5px;
+  color: gray;
+}
+.tab-2-image img {
+  width: 100%;
+  display: block;
+}
+/* Tab-3 Content */
+.tab-3-content-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.tab-3-content-box-image img {
+  width: 100%;
+  display: block;
+}
+/* ----- End Tabs Content ----- */
+
+/* ----- Start Footer Section ----- */
+footer {
+  margin-top: 30px;
+  width: 100%;
+  height: 123px;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-content {
+  flex: 0 0 100%;
+
+  color: gray;
+}
+.footer-content:hover {
+  color: #e92b57;
+  cursor: pointer;
+}
+.footer-content i {
+  transition: all 0.7s ease-out;
+}
+.footer-content h3 {
+  text-transform: capitalize;
+  transition: all 0.7s ease-out;
+}
+/* ----- End Footer Section ----- */
